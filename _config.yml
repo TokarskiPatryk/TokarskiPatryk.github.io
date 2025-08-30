@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Data Engineering Toolkit # the website title (if blank, full name will be used instead)
+title:  # the website title (if blank, full name will be used instead)
 first_name: Patryk
 middle_name: 
 last_name: Tokarski
@@ -47,11 +47,11 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: false
+footer_fixed: true
 search_enabled: true
-socials_in_search: false
+socials_in_search: true
 posts_in_search: true
-bib_search: false
+bib_search: true
 
 # Dimensions
 max_width: 930px
@@ -86,8 +86,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Data Engineering Toolkit # blog_name will be displayed in your blog page
-blog_description: Practical data engineering, programming tips, and tools that boost developer productivity.
+blog_name: al-folio # blog_name will be displayed in your blog page
+blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -123,12 +123,12 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: substack.com
-    rss_url: https://dataengineeringtoolkit.substack.com/feed
-  # - name: substack.com
-  #   posts:
-  #     - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-  #       published_date: 2024-05-14
+  - name: medium.com
+    rss_url: https://medium.com/@al-folio/feed
+  - name: Google Blog
+    posts:
+      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+        published_date: 2024-05-14
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -192,7 +192,6 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
-  - TMP/
 keep_files:
   - CNAME
   - .nojekyll
@@ -289,7 +288,7 @@ scholar:
   group_by: year
   group_order: descending
 
-# Display different badges with stats for your publications
+# Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid
 enable_publication_badges:
   altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
